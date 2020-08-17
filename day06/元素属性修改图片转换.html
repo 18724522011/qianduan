@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height:50px;
+        }
+
+    </style>
+</head>
+<body>
+<!--<div><button id="monkey">小猴</button>-->
+<!--<button id="monkeys">狂战士</button>-->
+<button>小猴子</button>
+</div>
+<img src="../day05/img/monkey.jpg" alt="" width="300px height=200px" title="小猴子">
+<script>
+    // var mon=document.getElementById('monkey');
+    // var mons=document.getElementById('monkeys');
+    var button=document.querySelector('button');
+    var imgh=document.querySelector('img');
+    var flag=0;
+    button.onclick=function () {
+        if(flag==0){
+            imgh.src='../day05/img/monkey.jpg';
+               imgh.title='小猴';
+               button.innerHTML='小猴子'
+               flag=1;
+        }else{
+                imgh.src='../day05/img/狂战士.png';
+                imgh.title='狂战士';
+            button.innerHTML='狂战士'
+                flag=0;
+        }
+    }
+
+    // monkey.onclick=function(){
+    //     imgh.src='../day05/img/monkey.jpg';
+    //     imgh.title='小猴';
+    // }
+    // monkeys.onclick=function(){
+    //     imgh.src='../day05/img/狂战士.png';
+    //     imgh.title='狂战士';
+    // }
+</script>
+</body>
+</html>
