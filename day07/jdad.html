@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div img{
+            position:fixed;
+            top:0px;
+            right:0px;
+
+
+        }
+    </style>
+
+</head>
+<body>
+<div class="box">
+    <img src="jdad/luzhou.jpg" alt="">
+    <img src="jdad/close.jpg" alt="" class="img">
+
+
+</div>
+
+<script>
+    var img=document.querySelector('.img')
+    var box=document.querySelector('.box')
+    img.onclick=function(){
+        box.style.display='none';
+    }
+</script>
+</body>
+</html>

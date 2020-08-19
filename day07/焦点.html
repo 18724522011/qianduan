@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" value="手机">
+<script>
+    //获取元素
+    var text=document.querySelector('input')
+    //焦点事件
+    //获得了焦点
+    text.onfocus=function () {
+        if(this.value==='手机'){
+            this.value='';
+        }
+        console.log('获得了焦点')
+
+              this.style.color='red';
+    }
+    //失去了焦点
+    text.onblur=function () {
+        console.log('失去了焦点')
+        if(this.value===''){
+            this.value='手机'
+        }
+
+this.style.color='#999';
+    }
+</script>
+</body>
+</html>

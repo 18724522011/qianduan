@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background-color: #009900;
+
+        }
+        .change{
+            background-color: skyblue;
+            color: #fff;
+            font-size: 25px;
+            margin-top:100px;
+        }
+        .first{
+
+        }
+    </style>
+</head>
+<body>
+<div class="first">文本</div>
+<script>
+    //多类名选择器不破坏原来的标签
+    var test=document.querySelector('div');
+    var flag=0;
+    test.onclick=function () {
+    //     if (flag == 0) {
+    //
+    //     this.style.backgroundColor = 'red'
+    //     this.style.marginTop = '100px';
+    //     flag=1;
+    //     }
+    // else{
+    //         this.style.backgroundColor = '#009900'
+    //         this.style.marginTop = '0px';
+    //         this.style.color='blue';
+    //         flag=0;
+    //     }
+        //将change样式塞入<div class="first">文本</div>中
+        this.className='first change';
+
+    }
+</script>
+</body>
+</html>
